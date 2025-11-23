@@ -2,20 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://127.0.0.1:1313/about/</loc>
+    <loc>https://taisei-86.github.io/profile/about/</loc>
     <lastmod>2024-07-21T01:38:59+09:00</lastmod>
   </url><url>
-    <loc>http://127.0.0.1:1313/culture/</loc>
+    <loc>https://taisei-86.github.io/profile/culture/</loc>
     <lastmod>2024-07-21T01:38:59+09:00</lastmod>
   </url><url>
-    <loc>http://127.0.0.1:1313/contributes/</loc>
+    <loc>https://taisei-86.github.io/profile/contributes/</loc>
     <lastmod>2024-07-21T01:38:59+09:00</lastmod>
   </url><url>
-    <loc>http://127.0.0.1:1313/</loc>
+    <loc>https://taisei-86.github.io/profile/</loc>
     <lastmod>2024-07-21T01:38:59+09:00</lastmod>
   </url><url>
-    <loc>http://127.0.0.1:1313/categories/</loc>
+    <loc>https://taisei-86.github.io/profile/categories/</loc>
   </url><url>
-    <loc>http://127.0.0.1:1313/tags/</loc>
+    <loc>https://taisei-86.github.io/profile/tags/</loc>
   </url>
 </urlset>
