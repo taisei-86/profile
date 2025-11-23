@@ -23,15 +23,15 @@ footer:after {
 }
 
 .icon-qiita {
-	background-image: url("/images/icon/qiita.png");
+	background-image: url("/profile/images/icon/qiita.png");
 }
 
 .icon-github {
-	background-image: url("/images/icon/github.png");
+	background-image: url("/profile/images/icon/github.png");
 }
 
 .icon-leetcode {
-	background-image: url("/images/icon/leetcode.png");
+	background-image: url("/profile/images/icon/leetcode.png");
 }
 
 .centered .about ul {
