@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+  Culture · taisei-86.pixtok.net
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="taisei-86">
+<meta name="description" content="
+  Code Review
+  
+    
+    Link to heading
+  
+
+Rather than pointing out details, you should consider whether the objective can be achieved.
+細かいことを指摘するのではなく、目的が達成できるかどうかを考えるべきです。
+https://blogs.oracle.com/javamagazine/post/five-code-review-antipatterns
+
+  Unit Test
+  
+    
+    Link to heading
+  
+
+This does not prove that there are no bugs. However, it should not be taken lightly.
+バグがないことを証明するものではありません。だからといって軽視すべきではありません。
+Personally, I think there is no problem as long as the coverage is secured at around 70%.">
+<meta name="keywords" content="blog,developer,personal">
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Culture">
+  <meta name="twitter:description" content="Code Review Link to heading Rather than pointing out details, you should consider whether the objective can be achieved.
+細かいことを指摘するのではなく、目的が達成できるかどうかを考えるべきです。
+https://blogs.oracle.com/javamagazine/post/five-code-review-antipatterns
+Unit Test Link to heading This does not prove that there are no bugs. However, it should not be taken lightly.
+バグがないことを証明するものではありません。だからといって軽視すべきではありません。
+Personally, I think there is no problem as long as the coverage is secured at around 70%.">
+
+<meta property="og:url" content="https://taisei-86.pixtok.net/culture/">
+  <meta property="og:site_name" content="taisei-86.pixtok.net">
+  <meta property="og:title" content="Culture">
+  <meta property="og:description" content="Code Review Link to heading Rather than pointing out details, you should consider whether the objective can be achieved.
+細かいことを指摘するのではなく、目的が達成できるかどうかを考えるべきです。
+https://blogs.oracle.com/javamagazine/post/five-code-review-antipatterns
+Unit Test Link to heading This does not prove that there are no bugs. However, it should not be taken lightly.
+バグがないことを証明するものではありません。だからといって軽視すべきではありません。
+Personally, I think there is no problem as long as the coverage is secured at around 70%.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2024-07-21T01:38:59+09:00">
+    <meta property="article:modified_time" content="2024-07-21T01:38:59+09:00">
+
+
+
+
+<link rel="canonical" href="https://taisei-86.pixtok.net/culture/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.38c4552ac40f9ae3408bad40358f654ebd8804412fe74ed56f2d6c8a7af82dd3.css" integrity="sha256-OMRVKsQPmuNAi61ANY9lTr2IBEEv507Vby1sinr4LdM=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+
+
+ 
+  
+    
+    <link rel="stylesheet" href="/css/custom.min.948f7eac9cd514fa97345f11a0bfa0b22cae4d263943501898788c762774942c.css" integrity="sha256-lI9&#43;rJzVFPqXNF8RoL&#43;gsiyuTSY5Q1AYmHiMdid0lCw=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/icon/avatar.ico" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+<body class="preload-transitions colorscheme-light">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="https://taisei-86.pixtok.net/">
+      taisei-86.pixtok.net
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/contributes/">OSS Contributes</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/about/">About Me</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/culture/">Culture</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container page">
+  <article>
+    <header>
+      <h1 class="title">
+        <a class="title-link" href="https://taisei-86.pixtok.net/culture/">
+          Culture
+        </a>
+      </h1>
+    </header>
+
+    <h2 id="code-review">
+  Code Review
+  <a class="heading-link" href="#code-review">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Rather than pointing out details, you should consider whether the objective can be achieved.</p>
+<p>細かいことを指摘するのではなく、目的が達成できるかどうかを考えるべきです。</p>
+<p><a href="https://blogs.oracle.com/javamagazine/post/five-code-review-antipatterns"  class="external-link" target="_blank" rel="noopener">https://blogs.oracle.com/javamagazine/post/five-code-review-antipatterns</a></p>
+<h2 id="unit-test">
+  Unit Test
+  <a class="heading-link" href="#unit-test">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>This does not prove that there are no bugs. However, it should not be taken lightly.</p>
+<p>バグがないことを証明するものではありません。だからといって軽視すべきではありません。</p>
+<p>Personally, I think there is no problem as long as the coverage is secured at around 70%.</p>
+<p>個人的にはカバレッジが70％程度担保されていれば問題ないと考えています。</p>
+<p><a href="https://testing.googleblog.com/2020/08/code-coverage-best-practices.html"  class="external-link" target="_blank" rel="noopener">https://testing.googleblog.com/2020/08/code-coverage-best-practices.html</a></p>
+<h2 id="hrt">
+  HRT
+  <a class="heading-link" href="#hrt">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Communication incidents always stem from a lack of respect, trust, and humility.</p>
+<p>コミュニケーションインシデントは常に、尊敬・信頼・謙虚のいずれかの欠如から生じます。</p>
+<p>The moment you think someone is evil, you are already off.</p>
+<p>誰かが悪者だと思った瞬間、あなたはすでに間違っています。</p>
+<p><a href="https://www.oreilly.com/library/view/team-geek/9781449329839/"  class="external-link" target="_blank" rel="noopener">https://www.oreilly.com/library/view/team-geek/9781449329839/</a></p>
+<h2 id="eradication-of-toil">
+  Eradication of toil
+  <a class="heading-link" href="#eradication-of-toil">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Toil should be eradicated. A famous example is the use of CI/CD.</p>
+<p>トイルは撲滅されるべきです。有名な例はCI/CDの使用です。</p>
+<p>However, I don&rsquo;t think it&rsquo;s necessary to make the effort to turn 30 seconds of work into 1 second.</p>
+<p>しかし、30秒の作業を1秒に変える努力は必要ないと思います。</p>
+<p>There&rsquo;s a world of difference between the cost of turning an hour of work into 10 minutes and the cost of turning 30 seconds into 1 second.</p>
+<p>1 時間の作業を 10 分に変えるコストと、30 秒を 1 秒に変えるコストとの間には、天と地ほどの差がある為です。</p>
+<p><a href="https://cloud.google.com/blog/products/management-tools/identifying-and-tracking-toil-using-sre-principles?hl=en"  class="external-link" target="_blank" rel="noopener">https://cloud.google.com/blog/products/management-tools/identifying-and-tracking-toil-using-sre-principles?hl=en</a></p>
+<h2 id="microservices">
+  Microservices
+  <a class="heading-link" href="#microservices">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Microservices are not a silver bullet.</p>
+<p>マイクロサービスは銀の弾丸ではありません。</p>
+<p>Microservices translate app complexity into network complexity.</p>
+<p>マイクロサービスは、アプリの複雑さをネットワーク連携の複雑さに変換します。</p>
+<p>In other words, it is an anti-pattern in the early stages when the business is not that big.</p>
+<p>言い換えれば、ビジネスがそれほど大きくない初期段階では、これはアンチパターンです。</p>
+<p>Division should not be the goal.<br>
+Complex applications require 10-20 or more dedicated engineers at any given time.<br>
+We need microservices because we need to separate these people and organize them by domain.</p>
+<p>分割することが目的であってはなりません。<br>
+複雑なアプリケーションには、常に 10〜20 人以上の専任エンジニアが必要です。<br>
+これらの人たちを分離し、ドメインごとに組織再編成する必要があるためマイクロサービスが必要なのです。</p>
+<p><a href="https://martinfowler.com/articles/microservices.html"  class="external-link" target="_blank" rel="noopener">https://martinfowler.com/articles/microservices.html</a></p>
+
+  </article>
+</section>
+
+  
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+    2025
+     taisei-86 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>
